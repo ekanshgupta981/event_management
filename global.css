@@ -96,10 +96,6 @@ header {
   padding-top: 0rem;
   animation: up 0.9s linear;
 }
-.main_title {
-  padding-top: 0rem;
-  animation: up 0.9s linear;
-}
 
 .main_pera {
   animation: fadeIn 1s linear;
@@ -107,7 +103,37 @@ header {
   opacity: 0;
   animation-fill-mode: forwards;
 }
+.knw_brdr {
+  animation: knwmr 1s linear;
+  animation-delay: 2.1s;
 
+  animation-fill-mode: forwards;
+}
+
+.know_more_btn {
+  animation: shows 1.5s linear;
+  animation-delay: 2.7s;
+  opacity: 0;
+  animation-fill-mode: forwards;
+  width: 100%;
+  padding: 0.7rem;
+  border-radius: 4rem;
+  font-size: 1.1rem;
+  background: transparent;
+  color: rgba(231, 231, 231, 0.74);
+  border: 2px solid rgba(231, 231, 231, 0.826);
+  font-weight: bold;
+  transition: 300ms linear;
+}
+.know_more_btn:hover {
+  background: rgb(255, 255, 255);
+  color: orange;
+  border: 2px solid orange;
+}
+
+.know_more_btn:active {
+  transform: scale(0.9);
+}
 /* Animations */
 @keyframes up {
   from {
@@ -119,7 +145,7 @@ header {
     opacity: 1;
   }
 }
-@keyframes show {
+@keyframes shows {
   from {
     opacity: 0;
   }
@@ -153,5 +179,14 @@ header {
   }
   to {
     margin-top: 1rem;
+  }
+}
+
+@keyframes knwmr {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 15%;
   }
 }
