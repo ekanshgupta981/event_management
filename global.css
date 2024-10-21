@@ -35,6 +35,8 @@ header {
 .nav_links:hover {
   color: orange;
 }
+
+/* hi */
 .nav_sec {
   height: 5rem;
   animation: navs 1s linear;
