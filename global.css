@@ -34,8 +34,14 @@ header {
 }
 .nav_links:hover {
   color: orange;
+  transform: scale(1.03);
 }
-
+.book_us_btn:active {
+  transform: scale(0.9);
+}
+.nav_links:active {
+  transform: scale(0.9);
+}
 /* hi */
 .nav_sec {
   height: 5rem;
@@ -58,14 +64,14 @@ header {
 }
 
 /* video top */
-.video_bfr::before {
-  content: "";
+.video_bfr {
   position: absolute;
-  background: rgba(8, 0, 30, 0.927);
+  background: rgba(8, 0, 30, 0.697);
   z-index: 1;
   width: 100%;
   height: 100%;
   top: 0;
+  mix-blend-mode: multiply;
 }
 
 .video_sec {
