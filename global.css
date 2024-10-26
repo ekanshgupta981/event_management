@@ -2,6 +2,8 @@
   margin: 0px;
   padding: 0px;
 }
+body {
+}
 /*======> navbar <==========*/
 
 .logo {
@@ -66,7 +68,7 @@ header {
 /* video top */
 .video_bfr {
   position: absolute;
-  background: rgba(8, 0, 30, 0.588);
+  background: rgba(8, 0, 30, 0.529);
   z-index: 1;
   width: 100%;
   height: 100%;
@@ -145,6 +147,7 @@ header {
 
 .abt_us {
   animation: shows 3s linear;
+
   animation-fill-mode: forwards;
 }
 
@@ -156,6 +159,24 @@ header {
 .nav_sec {
   transition: transform 0.3s ease-in-out; /* Smooth transition */
 }
+.abt_us_details {
+  animation: shows2 800ms linear;
+  opacity: 0;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+}
+.abt_us_details img {
+  animation: showimg 1s linear;
+  animation-fill-mode: forwards;
+  animation-delay: 1s;
+  box-shadow: 10px 2vh 2vh 1vh rgba(0, 0, 0, 0.104);
+}
+.about_pera-parent {
+  animation: shows2 800ms linear;
+  opacity: 0;
+  animation-delay: 1.5s;
+  animation-fill-mode: forwards;
+}
 /* Animations */
 @keyframes up {
   from {
@@ -165,6 +186,24 @@ header {
   to {
     padding-top: 0rem;
     opacity: 1;
+  }
+}
+@keyframes showimg {
+  from {
+    box-shadow: 10px 20px 10px rgba(0, 0, 0, 0.533);
+  }
+  to {
+    box-shadow: 10px 2vh 2vh 1vh rgba(0, 0, 0, 0.104);
+  }
+}
+@keyframes shows2 {
+  from {
+    opacity: 0;
+    transform: scale(1.3);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
   }
 }
 @keyframes shows {
