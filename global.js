@@ -26,8 +26,6 @@ function f1() {
 
   lastScrollTop = currentScrollTop <= 0 ? 0 : currentScrollTop; // For Mobile or negative scrolling
 
-  document.title = scrl_value;
-
   if (scrl_value > 80 && !hasAppended) {
     aboutus.appendChild(main_about);
     main_about.style = `
