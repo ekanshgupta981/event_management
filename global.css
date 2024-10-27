@@ -2,7 +2,8 @@
   margin: 0px;
   padding: 0px;
 }
-body {
+html {
+  scroll-behavior: smooth;
 }
 /*======> navbar <==========*/
 
@@ -29,15 +30,21 @@ header {
 .book_us_btn:hover {
   transform: scale(1.1);
 }
-.nav_links {
-  color: white;
+.nav_links a:link,
+.nav_links a:visited {
+  color: white !important;
+  text-decoration: none;
   cursor: pointer;
   transition: 200ms ease-in-out;
 }
-.nav_links:hover {
-  color: orange;
+.nav_links a {
+  display: inline-block;
+}
+.nav_links a:hover {
+  color: orange !important;
   transform: scale(1.03);
 }
+
 .book_us_btn:active {
   transform: scale(0.9);
 }

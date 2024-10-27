@@ -5,26 +5,24 @@ var main_aboutdetails = document.createElement("div");
 let hasAppended = false;
 let hasAppended1 = false;
 
-// Variables to track the current and previous scroll positions
-let lastScrollTop = 0;
-let nav = document.querySelector(".nav_sec"); // Select your nav bar
+// let lastScrollTop = 0;
+// let nav = document.querySelector(".nav_sec");
 
 function f1() {
   var scrl_value = Math.round(window.scrollY);
 
-  // Logic to show/hide the navigation bar
-  var currentScrollTop =
-    window.pageYOffset || document.documentElement.scrollTop;
+  // var currentScrollTop =
+  //   window.pageYOffset || document.documentElement.scrollTop;
 
-  if (currentScrollTop > lastScrollTop) {
-    // Scrolling down - hide the nav bar
-    nav.style.transform = "translateY(-130%)"; // Slide up
-  } else {
-    // Scrolling up - show the nav bar
-    nav.style.transform = "translateY(0)"; // Slide down
-  }
+  // if (currentScrollTop > lastScrollTop) {
 
-  lastScrollTop = currentScrollTop <= 0 ? 0 : currentScrollTop; // For Mobile or negative scrolling
+  //   nav.style.transform = "translateY(-130%)";
+  // } else {
+
+  //   nav.style.transform = "translateY(0)";
+  // }
+
+  // lastScrollTop = currentScrollTop <= 0 ? 0 : currentScrollTop;
 
   if (scrl_value > 80 && !hasAppended) {
     aboutus.appendChild(main_about);

@@ -32,12 +32,13 @@
     <header>
       <section class="nav_sec">
         <div>
-          <img
-            src="assets/images/stylish.png"
-            alt=""
-            class="logo"
-            style="margin-left: 3rem"
-          />
+          <a href="#home">
+            <img
+              src="assets/images/stylish.png"
+              alt=""
+              class="logo"
+              style="margin-left: 3rem"
+          /></a>
         </div>
         <div
           style="
@@ -49,29 +50,33 @@
           "
           class="poppins-bold"
         >
-          <h4 class="nav_links">Home</h4>
-          <h4 class="nav_links">About us</h4>
-          <h4 class="nav_links">Events</h4>
-          <h4 class="nav_links">Contact us</h4>
+          <h4 class="nav_links" id="h"><a href="#home">Home</a></h4>
+          <h4 class="nav_links" id="a">
+            <a href="#aboutus">About us</a>
+          </h4>
+          <h4 class="nav_links" id="e"><a href="">Events</a></h4>
+          <h4 class="nav_links" id="c"><a href="">Contact us</a></h4>
           <h4 class="">
-            <button
-              class="book_us_btn"
-              style="
-                padding: 0.5rem 2rem;
-                background: transparent;
-                color: white;
+            <a href=""
+              ><button
+                class="book_us_btn"
+                style="
+                  padding: 0.5rem 2rem;
+                  background: transparent;
+                  color: white;
 
-                border-radius: 5px;
-              "
+                  border-radius: 5px;
+                "
+              >
+                Book us
+              </button></a
             >
-              Book us
-            </button>
           </h4>
         </div>
       </section>
     </header>
     <!-- video bg -->
-    <section>
+    <section id="home">
       <div class="event_gif"></div>
     </section>
 
@@ -122,21 +127,25 @@
           </p>
         </div>
         <div style="width: 25%; margin-top: 3rem">
-          <button class="know_more_btn" style="">know more</button>
+          <a href="#aboutus"
+            ><button class="know_more_btn">know more</button></a
+          >
         </div>
       </div>
     </section>
 
     <!-- =====> About us <====== -->
-    <section
-      style="width: 100%; padding-bottom: 1rem; color: rgb(17, 17, 17)"
-      id="about_us_section"
-    ></section>
+    <div style="height: 40rem; background: white; width: 100%" id="aboutus">
+      <section
+        style="width: 100%; padding-bottom: 1rem; color: rgb(17, 17, 17)"
+        id="about_us_section"
+      ></section>
 
-    <section
-      style="padding: 4rem 3rem; overflow: hidden"
-      id="about_us_section_details"
-    ></section>
+      <section
+        style="padding: 4rem 3rem; overflow: hidden"
+        id="about_us_section_details"
+      ></section>
+    </div>
     <script src="global.js"></script>
   </body>
 </html>
