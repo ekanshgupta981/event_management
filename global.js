@@ -5,24 +5,26 @@ var main_aboutdetails = document.createElement("div");
 let hasAppended = false;
 let hasAppended1 = false;
 
-// let lastScrollTop = 0;
-// let nav = document.querySelector(".nav_sec");
+let lastScrollTop = 0;
+let nav = document.querySelector(".nav_sec");
 
 function f1() {
   var scrl_value = Math.round(window.scrollY);
 
-  // var currentScrollTop =
-  //   window.pageYOffset || document.documentElement.scrollTop;
+  // here
 
-  // if (currentScrollTop > lastScrollTop) {
+  var currentScrollTop =
+    window.pageYOffset || document.documentElement.scrollTop;
 
-  //   nav.style.transform = "translateY(-130%)";
-  // } else {
+  if (currentScrollTop > lastScrollTop) {
+    nav.style.transform = "translateY(-130%)";
+  } else {
+    nav.style.transform = "translateY(0)";
+  }
 
-  //   nav.style.transform = "translateY(0)";
-  // }
+  lastScrollTop = currentScrollTop <= 0 ? 0 : currentScrollTop;
 
-  // lastScrollTop = currentScrollTop <= 0 ? 0 : currentScrollTop;
+  // to here
 
   if (scrl_value > 80 && !hasAppended) {
     aboutus.appendChild(main_about);
