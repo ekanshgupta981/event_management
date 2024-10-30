@@ -128,3 +128,20 @@ function f1() {
 }
 
 addEventListener("scroll", f1);
+
+// timers
+// Define a variable to keep track of the current event
+let isFirstEventVisible = true;
+
+// Set an interval to toggle visibility every 3 seconds
+setInterval(() => {
+  if (isFirstEventVisible) {
+    document.getElementById("event-1").style.display = "none";
+    document.getElementById("event-2").style.display = "flex";
+  } else {
+    document.getElementById("event-2").style.display = "none";
+    document.getElementById("event-1").style.display = "flex";
+  }
+
+  isFirstEventVisible = !isFirstEventVisible;
+}, 5000);

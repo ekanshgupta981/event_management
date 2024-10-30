@@ -184,6 +184,12 @@ header {
   animation-delay: 1.5s;
   animation-fill-mode: forwards;
 }
+
+/* =====> events <========= */
+#event-1,
+#event-2 {
+  animation: shows 1s ease-in-out;
+}
 /* Animations */
 @keyframes up {
   from {
