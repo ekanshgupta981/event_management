@@ -135,8 +135,9 @@ header {
   border-radius: 4rem;
   font-size: 1.1rem;
   background: transparent;
-  color: rgba(231, 231, 231, 0.74);
-  border: 2px solid rgba(231, 231, 231, 0.826);
+  background: rgba(0, 0, 0, 0.321);
+  color: rgb(231, 231, 231);
+  border: 2px solid rgb(231, 231, 231);
   font-weight: bold;
   transition: 300ms linear;
 }
@@ -185,10 +186,34 @@ header {
   animation-fill-mode: forwards;
 }
 
+/* ====> Why Choose Us <========== */
+.wcu_box {
+  cursor: pointer;
+  background: white !important;
+  transition: 300ms ease-in-out !important;
+}
+.wcu_box:hover {
+  box-shadow: rgba(0, 0, 0, 0.355) 0px 3px 8px !important;
+  transform: scale(1.001);
+
+  background: linear-gradient(-45deg, #ffb03b, #ff7e3b) !important;
+}
+.txt_white {
+  transition: 300ms ease-in-out;
+}
+.wcu_box:hover .txt_white {
+  color: white !important;
+}
 /* =====> events <========= */
 #event-1,
 #event-2 {
   animation: shows 1s ease-in-out;
+}
+
+#site_link:visited,
+#site_link:link {
+  text-decoration: none;
+  color: orange;
 }
 /* Animations */
 @keyframes up {

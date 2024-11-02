@@ -81,7 +81,7 @@ function f1() {
             style="
               font-weight: 400;
               color: rgb(28, 28, 28);
-              margin-bottom: 1rem;
+              margin-bottom: 1rem;text-align: justify;
             "
           >
             Welcome to Eventura, where passion meets precision in event
@@ -100,7 +100,7 @@ function f1() {
             style="
               font-weight: 400;
               color: rgb(28, 28, 28);
-              margin-bottom: 1rem;
+              margin-bottom: 1rem;text-align: justify;
             "
           >
             At Eventura, we believe every event is an opportunity to create
@@ -109,7 +109,7 @@ function f1() {
           </p>
           <p
             class="poppins-bold"
-            style="font-weight: 400; color: rgb(28, 28, 28)"
+            style="font-weight: 400; color: rgb(28, 28, 28);text-align: justify;"
           >
             Event management is the art and science of organising events for a
             variety of reasons.They can be small, large, or personal and can be
@@ -129,8 +129,6 @@ function f1() {
 
 addEventListener("scroll", f1);
 
-// timers
-// Define a variable to keep track of the current event
 let isFirstEventVisible = true;
 
 // Set an interval to toggle visibility every 3 seconds
