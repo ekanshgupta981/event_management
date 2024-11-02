@@ -198,6 +198,9 @@ header {
 
   background: linear-gradient(-45deg, #ffb03b, #ff7e3b) !important;
 }
+.wcu_box:active {
+  transform: scale(0.9);
+}
 .txt_white {
   transition: 300ms ease-in-out;
 }
