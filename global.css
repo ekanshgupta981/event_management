@@ -51,7 +51,7 @@ header {
 .nav_links:active {
   transform: scale(0.9);
 }
-/* hi */
+
 .nav_sec {
   height: 5rem;
   animation: navs 1s linear;
@@ -190,7 +190,6 @@ header {
 .wcu_box {
   cursor: pointer;
   background: white !important;
-  transition: 300ms ease-in-out !important;
 }
 .wcu_box:hover {
   box-shadow: rgba(0, 0, 0, 0.355) 0px 3px 8px !important;
@@ -198,14 +197,16 @@ header {
 
   background: linear-gradient(-45deg, #ffb03b, #ff7e3b) !important;
 }
-.wcu_box:active {
-  transform: scale(0.9);
-}
+
 .txt_white {
-  transition: 300ms ease-in-out;
+  transition: 200ms ease-in-out;
 }
 .wcu_box:hover .txt_white {
   color: white !important;
+}
+
+.box_pera {
+  display: none;
 }
 /* =====> events <========= */
 #event-1,
