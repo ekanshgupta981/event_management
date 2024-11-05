@@ -219,6 +219,140 @@ header {
   text-decoration: none;
   color: orange;
 }
+
+/* ====>book us page <===== */
+/* Container */
+.book-us-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+/* Header Section */
+.header-section {
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.header-section h1 {
+  font-size: 32px;
+  font-weight: bold;
+  color: #333;
+}
+
+.header-section span {
+  color: #ff6f00;
+  font-weight: bold;
+}
+
+.header-section p {
+  font-size: 16px;
+  color: #777;
+  margin: 5px 0;
+}
+
+/* Form */
+.book-us-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.book-us-form label {
+  font-size: 14px;
+  color: #555;
+  font-weight: bold;
+}
+
+.book-us-form input,
+.book-us-form textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  resize: none;
+}
+
+/* Send Button */
+.send-button {
+  padding: 15px;
+  font-size: 16px;
+  color: white;
+  background-color: #ff6f00;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  box-shadow: 0px 8px 15px rgba(255, 111, 0, 0.3);
+  transition: all 0.3s ease;
+}
+.send-button:active {
+  box-shadow: 0px 8px 15px rgba(255, 111, 0, 0.3);
+  transform: translateY(0);
+}
+.send-button:hover {
+  box-shadow: 0px 12px 20px rgba(255, 111, 0, 0.5);
+  transform: translateY(-2px);
+}
+.book-us-container {
+  animation: shows2 1s linear;
+}
+/* Footer Styling */
+.footer {
+  background-color: #000;
+  color: #fff;
+  padding: 40px 20px;
+  font-family: Arial, sans-serif;
+}
+.footer-heading {
+  font-size: 1.5rem;
+  color: orange;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+.footer-link {
+  color: #ddd;
+  text-decoration: none;
+  display: block;
+  margin: 5px 0;
+  transition: color 0.3s;
+}
+.footer-link:hover {
+  color: orange;
+}
+.social-icon {
+  color: #ddd;
+  font-size: 1.2rem;
+  margin-right: 15px;
+  transition: color 0.3s;
+}
+.social-icon:hover {
+  color: orange;
+}
+.location {
+  color: #ddd;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  margin-bottom: 15px;
+}
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+}
+.footer-section {
+  flex: 1 1 200px;
+  min-width: 200px;
+}
+.divider {
+  width: 100%;
+  height: 1px;
+  background-color: #333;
+  margin: 20px 0;
+}
 /* Animations */
 @keyframes up {
   from {
